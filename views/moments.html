@@ -1,0 +1,8 @@
+<h1>Moments</h1>
+<div class="moment" ng-repeat="moment in moments" ng-if="moment.title">
+    <span class="favorite selected" title="Add to favorites" ng-click="syncFavorites(moment, $event)" ng-if="isFavorite(moment)">✪</span>
+    <span class="favorite" title="Remove from favorites" ng-click="syncFavorites(moment, $event)" ng-if="!isFavorite(moment)">✪</span>
+    <h2>{{moment.title}}</h2>
+    <img class="screenshot" ng-src="{{moment.screenshotUrl}}">
+</div>
+<div class="no-data" ng-if="moments.length === 0">There are no moments documented for this episode.</div>

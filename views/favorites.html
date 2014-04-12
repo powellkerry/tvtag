@@ -1,0 +1,9 @@
+<h1>Favorites</h1>
+<div class="favorite-display" ng-repeat="favorite in favorites | orderBy:favorite.program.showcardTitle">
+    <span class="favorite selected" title="Remove from favorites" ng-click="removeFavorite(favorite, $event)">✪</span>
+    <h2>{{favorite.program.showcardTitle}}</h2>
+    <h3>{{favorite.program.title}}</h3>
+    <h4>{{favorite.moment.title}}</h4>
+    <img class="screenshot" ng-src="{{favorite.moment.screenshotUrl}}"/>
+</div>
+<div class="no-data" ng-if="favorites.length === 0">You have not marked any moments as favorites.</div>

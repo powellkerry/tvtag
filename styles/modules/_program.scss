@@ -1,0 +1,23 @@
+a {
+  .program {
+    display: inline-block;
+    width: 288px;
+    width: 18rem;
+    height: 288px;
+    height: 18rem;
+    vertical-align: top;
+    background-color: #000;
+    background-color:  #FFF;
+    text-align: left;
+    padding: 16px;
+    padding: 1rem;
+    margin: 16px;
+    margin: 1rem;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+
+    &:hover {
+      background-color:  #DFDFDF;
+    }
+  }
+}

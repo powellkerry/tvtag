@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="tvtag">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+
+    <title>tv-tag</title>
+
+    <link rel="stylesheet" href="styles/build/tvtag.min.css">
+
+    <script src="libraries/_modernizer.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script src="http://code.angularjs.org/1.2.12/angular-route.min.js"></script>
+
+    <script src="TVTagConfig.js"></script>
+
+    <script src="controllers/MainController.js"></script>
+    <script src="controllers/MomentsController.js"></script>
+    <script src="controllers/FavoritesController.js"></script>
+
+    <script src="factories/MainFactory.js"></script>
+    <script src="factories/FavoritesFactory.js"></script>
+    <script src="factories/MomentsFactory.js"></script>
+
+</head>
+<body>
+<header>
+    <a href="/#"><span class="logo"></span></a>
+    <nav>
+        <a href="/#/favorites">Favorites</a>
+    </nav>
+</header>
+<!--<span class="header-image"></span>-->
+
+<div ng-view class="main-container"></div>
+
+</body>
+</html>

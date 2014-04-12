@@ -1,0 +1,46 @@
+header {
+  background: $pink;
+  height: 3rem;
+  text-align: left;
+
+  .logo {
+    background: url(../resources/tvtag_logo.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 112px;
+    width: 7rem;
+    height: 28.8px;
+    height: 1.8rem;
+    margin: 8px;
+    margin: .5rem;
+  }
+
+  nav {
+    display: inline-block;
+    vertical-align: top;
+    margin: 8px;
+    margin: .5rem;
+    float: right;
+    margin: 0;
+    padding: 0;
+
+    a {
+      font-weight: bold;
+      color: #FFF;
+      line-height: 48px;
+      line-height: 3rem;
+      padding: 8px;
+      padding: .5rem;
+      margin: 0;
+      margin-right: 16px;
+      margin-right: 1rem;
+      border-radius: $border-radius;
+
+      &:hover {
+        background: #FFF;
+        color: $pink;
+      }
+    }
+  }
+}
+

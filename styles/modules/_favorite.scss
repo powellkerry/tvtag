@@ -1,0 +1,47 @@
+.favorite {
+  float: right;
+  font-size: 32px;
+  font-size: 2rem;
+  cursor: pointer;
+
+  &:hover, &.selected {
+    color: $yellow;
+  }
+}
+
+
+div {
+  &.favorite-display {
+    display: inline-block;
+    text-align: left;
+    width: 288px;
+    width: 18rem;
+    height: 320px;
+    height: 20rem;
+    overflow: hidden;
+    margin: 16px;
+    margin: 1rem;
+    padding: 16px;
+    padding: 1rem;
+    color: $text-color;
+    background-color:  #FFF;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+
+    h2 {
+      margin: 0;
+    }
+    h3 {
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+    }
+
+    .screenshot {
+      text-align: left;
+      width: 288px;
+      width: 18rem;
+      overflow: hidden;
+    }
+  }
+}

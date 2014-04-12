@@ -1,0 +1,28 @@
+div {
+  &.moment {
+    display: inline-block;
+    text-align: left;
+    width: 288px;
+    width: 18rem;
+    overflow: hidden;
+    margin: 16px;
+    margin: 1rem;
+    padding: 16px;
+    padding: 1rem;
+    color: $text-color;
+    background-color: #FFF;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .screenshot {
+      text-align: left;
+      width: 288px;
+      width: 18rem;
+      overflow: hidden;
+    }
+  }
+}
